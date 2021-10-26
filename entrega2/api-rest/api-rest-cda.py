@@ -49,7 +49,7 @@ api.add_resource(PredictValue, '/predict')
 if __name__ == '__main__':
 
     model = pickle.load( open( "regression_model.pkl", "rb" ) )
-    app.run(debug=True,port=5050)
+    app.run(debug=True,port=5050,host="0.0.0.0")
 
 
 ### Ejemplo POSTMAN
