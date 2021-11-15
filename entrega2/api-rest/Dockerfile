@@ -5,6 +5,7 @@ RUN apt update
 
 COPY requirements.txt requirements.txt
 COPY api-rest-cda.py api-rest-cda.py
+COPY logger.py logger.py
 COPY modelo_entrega2.pkl modelo_entrega2.pkl
 RUN pip3 install -r requirements.txt
 
