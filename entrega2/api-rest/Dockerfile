@@ -5,7 +5,8 @@ RUN apt update
 
 COPY requirements.txt requirements.txt
 COPY api-rest-cda.py api-rest-cda.py
-COPY regression_model.pkl regression_model.pkl
+COPY logger.py logger.py
+COPY modelo_entrega2.pkl modelo_entrega2.pkl
 RUN pip3 install -r requirements.txt
 
 EXPOSE 5050
